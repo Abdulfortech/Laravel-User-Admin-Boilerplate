@@ -1,0 +1,227 @@
+Data Models
+* Users
+* Vendors
+* Admins
+* User Logs
+* Admin Logs
+* Packages
+* Subscriptions
+* Payments
+* Products
+* Orders
+* Reviews
+* Messages
+* Notifications
+* Reports
+* Deliveries
+* Delivery Agents
+
+
+** Users
+  - id
+  - vendorId
+  - firstName
+  - lastName
+  - type
+  - dob
+  - gender
+  - phone1
+  - phone2
+  - state
+  - lga
+  - address
+  - email
+  - email_verified_at
+  - remember_token
+  - password
+  - status
+  - created_at
+  - updated_at
+
+
+** Admins
+  - id
+  - vendorId
+  - firstName
+  - lastName
+  - username
+  - role
+  - email
+  - email_verified_at
+  - remember_token
+  - password
+  - status
+  - created_at
+  - updated_at
+
+** UserLogs
+  - id
+  - username
+  - userID
+  - IPAddress
+  - status
+  - created_at
+  - updated_at
+
+** AdminLogs
+  - id
+  - username
+  - adminID
+  - IPAddress
+  - status
+  - created_at
+  - updated_at
+
+** Vendors
+  - id
+  - userID
+  - name
+  - category
+  - nature
+  - market
+  - slang
+  - motto
+  - Logo
+  - banner
+  - description
+  - phone1
+  - phone2
+  - WhatsApp
+  - email
+  - Instagram
+  - facebook
+  - state
+  - lga
+  - address
+  - status
+  - created_at
+  - updated_at
+
+** Packages 
+  - id
+  - adminID
+  - title
+  - description
+  - price
+  - status
+  - created_at
+  - updated_at
+
+** Subscriptions 
+  - id
+  - userID
+  - vendorID
+  - packageID
+  - start_date
+  - end_date
+  - status
+  - created_at
+  - updated_at
+
+** Payments 
+  - id
+  - userID
+  - SubscriptionID
+  - packageID
+  - reference
+  - gateway
+  - channel
+  - amount
+  - discount
+  - fees
+  - total
+  - status
+  - created_at
+  - updated_at
+
+** Orders
+  - id
+  - userID
+  - productID
+  - vendorID
+  - orderCode
+  - Name
+  - phone
+  - address
+  - Quantity
+  - description
+  - status
+  - created_at
+  - updated_at
+
+  
+** Reviews
+  - id
+  - userID
+  - productID
+  - vendorID
+  - review
+  - rating
+  - status
+  - created_at
+  - updated_at
+
+  
+** Reports
+  - id
+  - userID
+  - productID
+  - vendorID
+  - type
+  - body
+  - status
+  - created_at
+  - updated_at
+
+** messages
+  - id
+  - userID
+  - vendorID
+  - subject
+  - body
+  - contact
+  - status
+  - created_at
+  - updated_at
+
+** products
+  - id
+  - userID
+  - vendorID
+  - title
+  - category
+  - brand
+  - market
+  - image1
+  - image2 
+  - image3
+  - image4
+  - price
+  - short_desc
+  - long_desc
+  - status
+  - created_at
+  - updated_at
+
+
+
+New Structure
+
+User Navbar
+* Home
+* Latest
+* Featured
+* category
+  * Switches
+  * Jewelleries
+  * 
+* My Account
+  - 
+  * Sign In
+  * Sign Up
+  -
+  * My Orders
+  * My Payments
+  * My Delivery--
+  * Sign Out
+
